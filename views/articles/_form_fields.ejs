@@ -1,0 +1,58 @@
+<div class="form-group">
+  <div class="col-md-12">
+    <label for="title" class="form-label mt-3">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      value="<%= article.title %>"
+      name="title"
+      required
+    />
+  </div>
+  <div class="col-md-12">
+    <label for="subtitle" class="form-label mt-3">Subtitle</label>
+    <input
+      type="text"
+      class="form-control"
+      value="<%= article.subtitle %>"
+      name="subtitle"
+      required
+    />
+  </div>
+  <div class="col-md-12">
+    <label for="author" class="form-label mt-3">Author</label>
+    <input
+      type="text"
+      class="form-control"
+      value="<%= article.author %>"
+      name="author"
+      required
+    />
+  </div>
+  <div class="col-md-12">
+    <label for="image" class="form-label mt-3">Image</label>
+    <input
+      type="text"
+      class="form-control"
+      value="<%= article.image %>"
+      name="image"
+      required
+    />
+  </div>
+  <div class="col-md-12">
+    <label for="content" class="form-label mt-3">Content</label>
+    <textarea
+      rows="5"
+      class="form-control"
+      placeholder="Write blog post here..."
+      name="content"
+      id="content"
+    >
+    <%= article.content %>
+    </textarea>
+  </div>
+  <br />
+  <div class="col-md-12">
+    <button type="submit" class="btn btn-outline-primary">Submit</button>
+  </div>
+</div>
